@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <FrameLayout
+        android:id="@+id/invisible_framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/hiddenText"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:visibility="visible"
+            tools:text="hidden" />
+
+        <TextView
+            android:id="@+id/debugText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:text="debug text"
+            android:gravity="end"
+            android:textSize="20dp"/>
+
+        <ToggleButton
+            android:id="@+id/btn_draw_State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Annotations On"
+            android:textOff="Annotations Off"
+            android:onClick="ToggleDrawState" />
+
+        <Button
+            android:id="@+id/annotate_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:text="text"
+            android:textColor="@color/white"
+            android:onClick="ChangeAnnotation_NewAnnotationMode"
+            android:backgroundTint="@color/quantum_indigo700"
+            android:visibility="gone"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_textSize"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginStart="90dp"
+            android:max="9"
+            android:progress="4"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/annotate_Line"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+            android:text="line"
+            android:textColor="@color/white"
+            android:onClick="ChangeAnnotation_NewAnnotationMode"
+            android:backgroundTint="@color/quantum_indigo700"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/annotate_Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp"
+            android:text="circle"
+            android:textColor="@color/white"
+            android:onClick="ChangeAnnotation_NewAnnotationMode"
+            android:backgroundTint="@color/quantum_indigo700"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/annotate_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="140dp"
+            android:text="delete"
+            android:textColor="@color/white"
+            android:onClick="ChangeAnnotation_NewAnnotationMode"
+            android:backgroundTint="@color/quantum_indigo700"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/annotate_clearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="170dp"
+            android:text="clear"
+            android:textColor="@color/white"
+            android:onClick="dev_button"
+            android:backgroundTint="@color/quantum_indigo700"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/annotate_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="230dp"
+            android:text="save drawing"
+            android:textColor="@color/white"
+            android:onClick="dev_save"
+            android:backgroundTint="@color/quantum_indigo700"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/annotate_load"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="260dp"
+            android:text="load drawing"
+            android:textColor="@color/white"
+            android:onClick="dev_load"
+            android:backgroundTint="@color/quantum_indigo700"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="320dp">
+
+            <Button
+                android:id="@+id/annotate_black"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:foreground="#000000"
+                android:onClick="ChangeAnnotationColor"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/annotate_red"
+                android:layout_height="match_parent"
+                android:layout_width="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:foreground="#ff2222"
+                android:background="#ff2222"
+                android:onClick="ChangeAnnotationColor"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/annotate_green"
+                android:layout_height="match_parent"
+                android:layout_width="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:foreground="#26bb26"
+                android:background="#26bb26"
+                android:onClick="ChangeAnnotationColor"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/annotate_blue"
+                android:layout_height="match_parent"
+                android:layout_width="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+                android:foreground="#2222ff"
+                android:background="#2222ff"
+                android:onClick="ChangeAnnotationColor"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

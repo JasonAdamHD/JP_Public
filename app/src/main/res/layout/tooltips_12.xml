@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_satellite_view_base_save_image">
+
+    <TextView android:id="@+id/tt12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:padding="8dp"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="5"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="450dp">
+        <Button
+            android:id="@+id/prevButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:backgroundTint="#0288D1"
+            android:textColor="@color/white"
+            android:onClick="changeTutorialViewPrev"/>
+
+        <Button android:id="@+id/closeButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:onClick="exitTut"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <Button
+            android:id="@+id/nextButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:backgroundTint="#0288D1"
+            android:textColor="@color/white"
+            android:onClick="changeTutorialViewNext"/>
+    </LinearLayout>
+</RelativeLayout>

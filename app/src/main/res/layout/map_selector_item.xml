@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius = "4dp"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:id="@+id/imageView"
+            android:contentDescription="@string/desc_for_map_name_USELESS_THIS_IS_HERE_BECAUSE_THE_COMPILER_COMPLAINS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="@string/map_name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:id="@+id/MapNameTextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MapNameTextView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="@string/isActive"
+            android:textSize="15sp"
+            android:padding="2dp"
+            android:id="@+id/IsActiveTextView"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

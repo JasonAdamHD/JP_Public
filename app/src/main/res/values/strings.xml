@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">UtilityTracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="return_to_map_from_overlay_selector">Return To Map</string>
+    <string name="map_name">MAP_NAME</string>
+    <string name="isActive">isActive</string>
+    <string name="desc_for_map_name_USELESS_THIS_IS_HERE_BECAUSE_THE_COMPILER_COMPLAINS">Dynamically set image from DB to this image.</string>
+    <string name="test_for_image_processing">Test for image processing</string>
+    <string name="test_image_processing_view_description">Used for testing the image processing</string>
+    <string name="return_button">return to main map</string>
+    <string name="title_activity_image_window_bars">ImageWindowBars</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Strings for menu items with submenus-->
+    <string name="markers">Marker Options</string>
+    <string name="settings">Settings</string>
+    <string name="testOpt">Other Options</string>
+
+    <!-- Strings for menu items not in submenus  -->
+    <string name="terrain_view">Terrain View</string>
+    <string name="toggle_map_vew">Toggle Map View</string>
+    <string name="about">About</string>
+    <string name="tool_tips">Tool tips</string>
+
+    <string name="help">Help</string>
+    <string name="save_to_database">Save Image To Database</string>
+    <string name="delete_from_database">Remove Image From App</string>
+
+    <!-- Strings for menu items in submenus-->
+    <string name="item_2">Clear All Markers</string>
+
+    <string name="set_anchor_marker">Set Anchor Marker</string>
+    <string name="item_4">Toggle Location Tracking</string>
+    <string name="color_picker">Exclude Color From Map</string>
+
+</resources>

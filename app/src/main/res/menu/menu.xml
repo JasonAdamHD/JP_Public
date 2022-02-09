@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context ="com.dodocrusaiders.utilitytracker.MapsActivity">
+
+    <item android:id="@+id/addImageLayer"
+        android:title="Add Image Layer"/>
+
+    <item android:id="@+id/toggleMapView"
+        android:title="@string/toggle_map_vew"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/markerOptions"
+        android:title="@string/markers"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/addManualMarker"
+                android:title="@string/set_anchor_marker"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/addCustomMarker"
+                android:title="Add Custom Marker"/>
+            <item
+                android:id="@+id/removeAllMarkers"
+                android:title="@string/item_2"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/deleteFromDatabase"
+        android:title="@string/delete_from_database"
+        android:icon="@drawable/ic_delete_from_database"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/setting"
+        android:title="@string/settings"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/automaticLocationTracking"
+                android:title="@string/item_4"
+                app:showAsAction="never" />
+            <item android:id="@+id/colorPicker"
+                android:title="@string/color_picker"
+                app:showAsAction="never"/>
+            <item android:id="@+id/terrainView"
+                android:title="@string/terrain_view"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/tooltips"
+        android:icon="@drawable/ic_baseline_help"
+        android:title="@string/tool_tips"
+        app:showAsAction="always"/>
+    <item android:id="@+id/saveToDatabase"
+        android:icon="@drawable/ic_baseline_add_a_photo_to_database"
+        android:title="@string/save_to_database"
+        app:showAsAction="always" />
+</menu>

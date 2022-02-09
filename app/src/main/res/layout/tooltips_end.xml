@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_end_bg">
+
+    <TextView android:id="@+id/ttEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:padding="8dp"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="5"/>
+
+        <Button
+            android:id="@+id/prevButtonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0288D1"
+            android:textColor="@color/white"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="39dp"
+            android:onClick="changeTutorialViewPrev"/>
+
+        <Button android:id="@+id/closeButtonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:onClick="exitTut"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
